@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azure Cost Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Azure Cost Dashboard</h1>
+    <p>Enter your Azure credentials to view real-time billing data</p>
+  </header>
+
+  <div class="section">
+    <form id="billingForm">
+      <input type="text" name="tenant_id" placeholder="Tenant ID" required />
+      <input type="text" name="client_id" placeholder="Client ID" required />
+      <input type="text" name="client_secret" placeholder="Client Secret" required />
+      <input type="text" name="subscription_id" placeholder="Subscription ID" required />
+      <button type="submit">Fetch Billing</button>
+    </form>
+    <pre id="output">Results will appear here...</pre>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
